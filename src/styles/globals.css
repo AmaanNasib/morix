@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200:400;600;700&display=swap");
+@import "tailwindcss";
+
+@config "../../tailwind.config.js";
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.custom-scrollbar:hover {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary, #cd1e2f) transparent;
+}
+
+/* Sidebar icon color overrides - using CSS variables for configurability */
+.sidebar-icon-active svg path,
+.sidebar-icon-active path {
+  stroke: var(--sidebar-icon-active-color, #FFFFFF) !important;
+}
+
+.sidebar-icon-inactive svg path,
+.sidebar-icon-inactive path {
+  stroke: var(--sidebar-icon-inactive-color, #132533) !important;
+}
+
+.logout-icon svg path,
+.logout-icon path {
+  stroke: var(--logout-icon-color, #FF0000) !important;
+}
+
+.logo-icon-white svg path,
+.logo-icon-white path {
+  stroke: var(--logo-icon-white-color, #FFFFFF) !important;
+}
+
+.logo-icon-red svg path,
+.logo-icon-red path { 
+  stroke: var(--logo-icon-red-color, #CD1E2F) !important;
+}
